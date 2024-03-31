@@ -1,0 +1,161 @@
+.newsletter {
+    background: var(--cor-secundaria);
+    color: var(--cor-de-titulos);
+    text-align: center;
+    
+}
+
+.newsletter__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 2.5em 2em;
+  }
+
+.news__item {
+    margin-bottom: 40px;
+  }
+
+  .news__titulo {
+    color: var(--cor-de-titulos);
+    font-weight: 500;
+    font-size: 24px;
+    font-family: var(--fonte-logo);
+  }
+
+  .news__placeholder {
+    border: none;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-de-titulos);
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .news__placeholder::placeholder {
+    color: var(--cor-tercearia);
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+
+
+.news__titulo {
+    font-family: var(--fonte-logo), serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+    color: var(--cor-tercearia);
+}
+
+.news__subtitulo {
+    font-family: var(--fonte-logo), serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+    color: var(--cor-de-titulos);
+}
+
+.news__mail {
+    color: var(--cor-de-titulos);
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0.5em;
+}
+
+.news__link {
+    color: var(--cor-de-titulos);
+    text-decoration: none;
+}
+
+.news__icon {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__icon__icon {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news__image {
+    display: none;
+}
+@media screen and (min-width: 820px) {
+    .news__image {
+        display: flex;
+        width: 100%;
+    }
+    
+    .news__mq {
+        display: flex;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .news__titulo {
+      font-size: 40px;
+      font-weight: 400;
+  }
+  
+  .news__subtitulo {
+    font-size: 24px;
+  }
+  
+  .news__mail {
+      font-size: 20px;
+  }
+
+  .news__placeholder {
+    font-size: 20px;
+  }
+
+  .newsletter__itens {
+    gap: 60px;
+  }
+
+}
+
+@media screen and (min-width: 1728px) {
+  .news__titulo {
+    font-size: 70px;
+    color: var(--cor-de-titulos);
+}
+
+.news__subtitulo {
+  font-size: 45px;
+}
+
+.news__mail {
+    font-size: 30px;
+}
+
+.news__placeholder {
+  font-size: 30px;
+}
+
+.newsletter__itens {
+  gap: 10vw;
+}
+
+.news__insta {
+  font-size: 24px;
+}
+
+.news__placeholder {
+  font-size: 24px;
+  width: 40%;
+}
+
+}

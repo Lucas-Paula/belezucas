@@ -1,0 +1,27 @@
+@import url("styles/header.css");
+@import url("styles/baner.css");
+@import url("styles/carrosel.css");
+@import url("styles/imagens.css");
+@import url("styles/newsletter.css");
+@import url("styles/enderecos.css");
+@import url("styles/rodape.css");
+
+:root {
+    --cor-de-fundo: #F5CCA0;
+    --branco: #FFFFFF;
+    --cor-de-titulos: #6B240C;
+    --cor-secundaria: #E48F45;
+    --cor-tercearia: #994D1C;
+    --degrade: linear-gradient(87.54deg, #994D1C 50.49%, #6B240C 185.37%);
+    --fonte-principal: "Poppins";
+    --fonte-logo: "Fraunces";
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+  

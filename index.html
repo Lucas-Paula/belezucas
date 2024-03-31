@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belezucas Cosméticos</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="conteiner">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabecalho__menu container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Masculino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Feminino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Cuidados com a Pele</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Banho</a>
+        </li>
+      </ul>
+      <h1 class="nome__site">Be<b class="nome__site--negrito">l</b>ez<b class="nome__site--negrito">ucas</b></h1>
+    </div>
+
+    <ul class="options">
+      <input type="checkbox" id="options-menu" class="options__buttom">
+      <label for="options-menu" class="options__rotulo">
+        <li class="options__item">Categorias</li>
+      </label>
+
+      <ul class="lista-menu">
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Masculino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Feminino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Cuidados com a Pele</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Banho</a>
+        </li>
+      </ul>
+
+      <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
+      <li class="options__item"><a href="#" class="options__link">Meus produtos</a></li>
+    </ul>
+
+    <div class="conteiner">
+      <a href="#"><img src="img/favorito24px.png" alt="meus favoritos" class="container__imagem options__favoritos"></a>
+      <a href="#" class="container__link">
+        <img src="img/carrinho24px.png" alt="carrinho de compras" class="container__imagem">
+        <p class="container__texto">Meu carrinho</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/perfil24px.png" alt="meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+  <div class="logo__site">
+    <img src="img/logo-belezucas.png" alt="logo do site Belezucas">
+  </div>
+
+  <section class="baner">
+    <h2 class="baner__titulo">Seja bem vindo ao Belezucas</h2>
+    <p class="baner__texto">Aqui você encontra tudo para o seu visual, seja quem você quiser ser!</p>
+    <input type="search" class="baner__pesquisa" placeholder=" o que você procura? ">
+  </section>
+
+  <section class="carrosel">
+    <h2 class="carrosel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/cabelo.png" 
+                alt="imagem gerada por inteligencia artificial de mulher com ceblos ao vento"></div>
+              <div class="swiper-slide"><img src="img/perfumaria-masculina.png"
+                      alt="imagem gerada por inteligencia artificial de homem segurando perfume"></div>
+              <div class="swiper-slide"><img src="img/skincare.png" 
+                      alt="imagem gerada por inteligencia artificial de mulher cuidando da pele"></div>
+              <div class="swiper-slide"><img src="img/perfumaria-feminina.png"
+                      alt="imagem gerada por inteligencia artificial de mulher segurando perfume"></div> 
+              <div class="swiper-slide"><img src="img/corpo-banho.png"
+                      alt="imagem gerada por inteligencia artificial de mulher no banho lavando a pele"></div> 
+              <div class="swiper-slide"><img src="img/maquiagem.png" 
+                      alt="imagem gerada por inteligencia artificial de mulher se maquiando"></div>
+              
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+            <div class="descrição">
+                <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descrição__titulo-livro">Creme Hidratante BELEZUCAS</h2>
+                <p class="descrição__texto">Nosso creme hidratante de corpo que hidrata e ilumina a pele.</p>
+            </div>
+      <section class="img__banner">
+            <img src="img/destaque_produto.png" alt="imagem do produto em destaque" class="descrição__imagem">
+            </section>
+        </div>
+
+        <div class="card__botões">
+            <ul class="botões">
+                <li class="botões__item"><img src="img/favorito32px.png" alt="Favoritar item"></li>
+                <li class="botões__item"><img src="img/carrinho32px.png" alt="Adicionar no carrinho de compras"></li>
+            </ul>
+            <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+    </div>
+
+  </section>
+
+<div class="news__mq">
+  <section class="newsletter">
+    <div class="newsletter__itens">
+      <div class="news__item"><h1 class="news__titulo">Fique atualizado!</h1><br><input type="email" placeholder="Assine nossa newsletter" class="news__placeholder"></div>
+      <div class="news__item"><h3 class="news__subtitulo">PRECISA DE AJUDA?</h3><p class="news__mail">atendimento@belezucas.com.br</p></div>
+      <div class="news__item">
+        <a href="#"><img src="img/simbolo-de-aplicativo-do-facebook24px.png" alt="icone do facebook"></a>
+        <a href="#"><img src="img/twitter24px.png" alt="icone do twitter"></a>
+        <a href="#"><img src="img/instagram-new.png" alt="icone do instagram"></a>
+        <p class="news__insta">@belezucas</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="news__image">
+    <img src="img/perfume_belezucas.png" alt="imagem criada via inteligencia artificial de um perfume da marca">
+  </div>
+</div>
+
+  <div class="news__mq">
+    <div class="news__image">
+      <img src="img/cliente-belezucas.png" alt="imagem gerada por inteligencia artificial de um cliente da loja ficticia belezucas">
+    </div>
+
+  <section class="enderecos">
+    <div class="enderecos__itens">
+      <h1 class="enderecos__titulo">Nossas Lojas</h1>
+      <div class="enderecos__item">Av. Cristóvão Colombo, 123<br>Campo Grande - MS</div>
+      <div class="enderecos__item">Rua dos Bobos, 0<br>Esmero - MT</div>
+      <div class="enderecos__item">Av. Maiara e Maraisa, 10100<br>São Paulo -SP</div>
+      <div class="enderecos__item">Shopping Bangu<br>Rio de Janeiro - RJ</div>
+    </div>
+  </section>
+
+</div>
+  
+  <hr />
+
+  <footer class="rodapé">
+    <p>&copy; 2024 projeto fictício Grupo desenvolve</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  spaceBetween: 6,
+  slidesPerView: 2.5,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+  breakpoints: {
+    1728: {
+      spaceBetween: 20  ,
+      slidesPerView: 4,
+    }
+  }
+});
+  </script>
+
+</body>
+
+</html>
