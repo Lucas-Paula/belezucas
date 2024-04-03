@@ -24,7 +24,7 @@
     font-family: var(--fonte-logo);
   }
 
-  @media screen and (min-width: 820px) {
+  @media only screen and (min-width: 820px) {
 
     .enderecos {
         width: 100%;
@@ -42,7 +42,7 @@
   
 }
 
-@media screen and (min-width: 1728px) {
+@media only screen and (min-width: 1728px) {
 
   .enderecos__titulo {
     font-size: 60px;

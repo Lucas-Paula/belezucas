@@ -94,7 +94,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 820px) {
+@media only screen and (min-width: 820px) {
     .card {
         width: 60%;
         height: 35vw;
@@ -110,7 +110,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     
     .descrição__titulo {
         font-size: 30px;
@@ -132,7 +132,7 @@
 
 }
 
-@media screen and (min-width: 1728px) {
+@media only screen and (min-width: 1728px) {
     .baner__titulo {
         font-size: 36px;
     }
