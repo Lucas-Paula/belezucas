@@ -3,9 +3,76 @@ hr {
     background-color: var(--cor-de-titulos);
 }
 
-.rodapé {
+
+.rodape {
     background-color: var(--cor-secundaria);
     color: var(--cor-de-titulos);
     text-align: center;
     padding: 0.5em;
    }
+
+.rodape__nome-site {
+    font-family: var(--fonte-logo);
+    font-size: 4em;
+    display: none;
+   }
+
+
+.rodape-lista {
+    display: none;
+}
+
+.rodape-lista__titulo {
+    text-transform: uppercase;
+    color: var(--cor-tercearia);
+    font-weight: 600;
+    text-align: justify;
+}
+
+.rodape-lista__link {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+}
+
+.rodape-lista__link:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0 3em 0;
+    }
+    
+
+    .rodape-lista {
+        display: block; 
+    }
+
+    .rodape__nome-site {
+        display: block;
+        padding-top: 10%;
+    }
+
+
+    .rodape-lista__titulo {
+        font-size: 0.875em;
+        margin-bottom: 1em;
+    }
+
+    .rodape-lista__item {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    .rodape-lista__link {
+        text-decoration: none;
+        font-size: 0.875em;
+        margin-left: 0.1em;
+    }
+
+
+}
