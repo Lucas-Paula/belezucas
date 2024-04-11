@@ -32,3 +32,13 @@
     }
     
 }
+
+@media only screen and (min-width: 1728px) {
+    .wrapper {
+        margin: 0 13em 0 13em;
+        justify-content: center; 
+        align-items: center;
+        min-height: 100vh;
+  }
+
+}

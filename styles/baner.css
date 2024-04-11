@@ -156,4 +156,14 @@
     .banner__pesquisa::placeholder {
         background-position: 12em;
     }
+
+    .baner {
+        display: none;
+    }
+
+    .card {
+        width: 70%;
+        height: 35vw;
+        margin: 2.5em auto;
+    }
 }

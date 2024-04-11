@@ -17,6 +17,7 @@
 
 <body>
   <header class="cabecalho">
+    <div class="cabecalho__itens">
     <div class="conteiner">
       <input type="checkbox" id="menu" class="container__botao">
       <label for="menu" class="container__rotulo">
@@ -65,6 +66,8 @@
       <li class="options__item"><a href="#" class="options__link">Meus produtos</a></li>
     </ul>
 
+    <input type="search" class="cabecalho__pesquisa" placeholder=" Bem vindo ao Belezucas, como podemos ajudar? ">
+
     <div class="conteiner">
       <a href="#"><img src="img/favorito24px.png" alt="meus favoritos" class="container__imagem options__favoritos"></a>
       <a href="#" class="container__link">
@@ -76,7 +79,12 @@
         <p class="container__texto">Meu perfil</p>
       </a>
     </div>
+  </div>
+
   </header>
+
+<div class="wrapper">
+
   <div class="logo__site">
     <img src="img/logo-belezucas.png" alt="logo do site Belezucas">
   </div>
@@ -166,21 +174,26 @@
     </div>
 
   <section class="enderecos">
-    <div class="enderecos__itens">
       <h1 class="enderecos__titulo">Nossas Lojas</h1>
-      <div class="enderecos__item">Av. Cristóvão Colombo, 123<br>Campo Grande - MS</div>
-      <div class="enderecos__item">Rua dos Bobos, 0<br>Esmero - MT</div>
-      <div class="enderecos__item">Av. Maiara e Maraisa, 10100<br>São Paulo -SP</div>
-      <div class="enderecos__item">Shopping Bangu<br>Rio de Janeiro - RJ</div>
+      <div class="enderecos__itens">
+        <a href="https://maps.app.goo.gl/ktQoL5BN4UrcitHr7" target="_blank" class="enderecos__link">
+      <div class="enderecos__item"><b class="enderecos__cidade">Campo Grande - MS</b><br>Av. html e css, 100</div></a>
+        <a href="https://youtu.be/jb5z-_TyJfw?t=100" target="_blank" class="enderecos__link">
+      <div class="enderecos__item"><b class="enderecos__cidade">Esmero - MT</b><br>Rua dos Bobos, 0</div></a>
+        <a href="https://maps.app.goo.gl/PygQNqRdsseo6haP8" target="_blank" class="enderecos__link">
+      <div class="enderecos__item"><b class="enderecos__cidade">São Paulo -SP</b><br>Av. Maiara e Maraisa, 10100</div></a>
+        <a href="https://maps.app.goo.gl/eVxqy9na9moJTQRHA" target="_blank" class="enderecos__link">
+      <div class="enderecos__item"><b class="enderecos__cidade">Rio de Janeiro - RJ</b><br>Shopping Bangu 1<br>cela 3</div></a>
     </div>
   </section>
 
+</div>
 </div>
   
   <hr />
 
   <footer class="rodape">
-    <div class="rodape__titulo"><h1 class="rodape__nome-site">Belezucas</h1><p class rodape__descricao-site>&copy; 2024 projeto fictício Grupo desenvolve</p></div>
+  <div class="rodape__titulo"><h1 class="rodape__nome-site">Belezucas</h1><p class rodape__descricao-site>&copy; 2024 projeto fictício Grupo desenvolve</p></div>
     <ul class="rodape-lista">
         <li class="rodape-lista__titulo">Sobre nós</li>
         <li class="rodape-lista__item">
@@ -223,6 +236,7 @@
             <a href="#" class="rodape-lista__link">Política de Privacidade</a>
         </li>
     </ul>
+  </div>
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -235,10 +249,20 @@
     type: 'bullets',
   },
 
+  a11y: {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
   breakpoints: {
     1728: {
       spaceBetween: 20  ,
-      slidesPerView: 4,
+      slidesPerView: 3.5,
     }
   }
 });

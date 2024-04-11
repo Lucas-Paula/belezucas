@@ -129,32 +129,32 @@
 
 @media only screen and (min-width: 1728px) {
   .news__titulo {
-    font-size: 70px;
+    font-size: 60px;
     color: var(--cor-de-titulos);
 }
 
 .news__subtitulo {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .news__mail {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .news__placeholder {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .newsletter__itens {
-  gap: 10vw;
+  gap: 6vw;
 }
 
 .news__insta {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .news__placeholder {
-  font-size: 24px;
+  font-size: 20px;
   width: 40%;
 }
 

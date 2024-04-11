@@ -11,7 +11,7 @@
     background-image: url(../img/abrir-menu32px.png);
 }
 
-.cabecalho {
+.cabecalho__itens {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -79,6 +79,25 @@
 .container__texto {
     display: none;
 }
+
+.cabecalho__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--cor-de-titulos);
+    color: var(--branco);
+    border-radius: 20px;
+    padding: 1em;
+    width: 25%;
+    display: none;
+}
+
+.cabecalho__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    text-align: center;
+    background: url(../img/procurar24px.png) no-repeat;
+    color: var(--cor-de-titulos);
+
+}
+
 
 @media only screen and (min-width: 1024px) {
     
@@ -151,6 +170,14 @@
 
 @media only screen and (min-width: 1728px) {
 
+    .cabecalho {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    
+    }
+
     .container__link {
         display: flex;
         align-items: center;
@@ -167,6 +194,10 @@
     }
 
     .container__texto {
+        display: block;
+    }
+
+    .cabecalho__pesquisa {
         display: block;
     }
     
