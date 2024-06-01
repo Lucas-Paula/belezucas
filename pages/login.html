@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta | BeLeZucas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="pagina__login">
+    <section class="login">
+        <div class="login__logo">
+            <a href="../index.html" class="nome__site--link">
+                <h1 class="nome__site-login">Be<b class="nome__site--negrito--login">l</b>ez<b class="nome__site--negrito--login">ucas</b></h1>
+            </a>
+        </div>
+
+        <section class="formulario">
+            <div class="login__card">
+                <h2 class="login__text--titulo">Bem Vindo!</h2>
+                <p class="login__text">Para continuar, digite seu e-mail</p>
+                <form class="principal__formulario" data-formulario>
+                    <fieldset class="formulario__campo" id="email-fieldset">
+                        <label class="campo__etiqueta" for="email">E-mail</label>
+                        <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <hr />
+                    <div>
+                        <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="button">
+                        <span class="mensagem-erro"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="login__privacidade">
+            <a href="#" class="login__politicas">Política de privacidade</a>
+            <a href="#" class="login__politicas">Relacionamento com o cliente</a>
+        </div>
+    </section>
+
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

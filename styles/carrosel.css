@@ -18,14 +18,21 @@
     margin: 0.5em 0;
 }
 
+.swiper-slide {
+    transition: transform 0.2s ease;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
 @media only screen and (min-width: 1024px) {
     .carrosel__titulo {
         font-size: 22px;
     }
 
-    .swiper-pagination {
-        margin: 1em 0 1em 0;
-    }
+    
     
 }
 

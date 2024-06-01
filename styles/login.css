@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagina__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nome__site--link {
+  text-decoration: none;
+}
+
+.login__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.login__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--branco);
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1em;
+  padding: 4em;
+  gap: 10px;
+}
+
+.login__text--titulo {
+  font-size: var(--fonte-principal);
+  font-size: 24px;
+  color: var(--cor-de-titulos);
+}
+
+.login__text {
+  font-size: var(--fonte-principal);
+  font-size: 14px;
+  color: var(--cor-de-titulos);
+}
+
+.login__esqueceu {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-size: 12px;
+}
+
+.formulario__botao {
+  color: var(--cor-de-fundo);
+  background: var(--cor-de-titulos);
+  border-radius: 5px;
+  margin: 2em auto;
+  padding: 1em 3em;
+}
+
+.login__privacidade {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.login__politicas {
+  text-decoration: none;
+  color: var(--cor-de-titulos);
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.nome__site-login {
+  font-family: var(--fonte-logo), serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  color: var(--cor-de-titulos);
+  display: flex;
+}
+
+.nome__site-login, .nome__site--negrito--login {
+  font-family: var(--fonte-logo);
+  font-size: 60px;
+}
+
+.nome__site-login {
+  font-weight: 300;
+  margin: 0 0.5em;
+}
+
+.nome__site--negrito--login {
+  font-weight: 700;
+}
+
+.formulario__titulo-texto {
+  margin: 1em 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.campo__etiqueta {
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.campo__escrita {
+  display: block;
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 20px;
+  width: 100%;
+  padding: 1em;
+  margin-top: 0.5em;
+}
+
+.campo__escrita--menor {
+  width: 50%;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--cor-de-titulos);
+}
+
+.formulario__campo .formulario__campos {
+  border: none;
+}

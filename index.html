@@ -1,94 +1,129 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belezucas Cosméticos</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezucas Cosméticos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="cabecalho">
-    <div class="cabecalho__itens">
-    <div class="conteiner">
-      <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu" class="container__rotulo">
-        <span class="cabecalho__menu container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__titulo">Categorias</li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Masculino</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Feminino</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Cuidados com a Pele</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Banho</a>
-        </li>
-      </ul>
-      <h1 class="nome__site">Be<b class="nome__site--negrito">l</b>ez<b class="nome__site--negrito">ucas</b></h1>
+    <header class="cabecalho">
+        <div class="cabecalho__itens">
+            <div class="conteiner">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu container__imagem"></span>
+                </label>
+
+                <ul class="lista-menu">
+                  <section class="hide__menus">
+                    <div class="hide-conteiner">
+                        <input type="checkbox" id="menu" class="container__botao">
+                        <label for="menu" class="container__rotulo">
+                            <span class="cabecalho__menu container__imagem"></span>
+                        </label>
+                  <h1 class="nome__site">Be<b class="nome__site--negrito">l</b>ez<b class="nome__site--negrito">ucas</b></h1>
+                    </div>
+                    <div class="hide-conteiner2">
+                  <li class="hide-lista-menu__titulo">Minha Conta</li>
+                  <li class="hidelista-menu__item" id="info-perfil"></li>
+                </div>
+                  </section>
+
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Masculino</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Feminino</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Skincare</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Corpo e Banho</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Cabelo</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Maquiagem</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infantil</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Mãos</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Casa</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Acessórios</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Perfumaria</a></li>
+                </ul>
+                <h1 class="nome__site">Be<b class="nome__site--negrito">l</b>ez<b class="nome__site--negrito">ucas</b></h1>
+            </div>
+            <div class="overlay"></div>
+            
+            <section class="mediaquerryoff">
+
+            <ul class="options">
+              <li class="options__items">
+                  <a href="#" class="options__links">Categorias</a>
+                  <nav>
+                      <div class="lista-menu__items lista-menu__links">
+                          <a href="#">Masculino</a>
+                          <a href="#">Feminino</a>
+                          <a href="#">Skincare</a>
+                          <a href="#">Corpo e Banho</a>
+                          <a href="#">Cabelos</a>
+                          <a href="#">Maquiagem</a>
+                          <a href="#">Infantil</a>
+                          <a href="#">Mãos</a>
+                          <a href="#">Casa</a>
+                          <a href="#">Acessórios</a>
+                          <a href="#">Perfumaria</a>
+                      </div>
+                  </nav>
+              </li>
+              <li class="options__items">
+                  <a href="#" class="options__links">Lançamentos</a>
+              </li>
+              <li class="options__items">
+                  <a href="#" class="options__links">Promoções</a>
+                  <nav>
+                      <div class="lista-menu__items lista-menu__links">
+                          <a href="#">Queima de estoque</a>
+                          <a href="#">Até 30% de desconto</a>
+                          <a href="#">O patrão ficou louco</a>
+                          <a href="#">Até 50% de desconto</a>
+                          <a href="#">Dia da Beleza</a>
+                          <a href="#">Até 60% de desconto</a>
+                          <a href="#">Ultimas oportunidades</a>
+                          <a href="#">Até 80% de desconto</a>
+                          <a href="#">Outras Ofertas</a>
+                      </div>
+                  </nav>
+              </li>
+          </ul>
+      </section>
+
+        <input type="search" class="cabecalho__pesquisa" placeholder=" Bem vindo ao Belezucas, como podemos ajudar? ">
+        <div class="conteiner">
+            <a class="carrinho-link" href="#">
+                <div class="container__item" id="carrinho-container">
+                    <img src="img/carrinho24px.png" alt="carrinho de compras" class="container__imagem">
+                    <p class="container__texto">Meu carrinho</p>
+                </div>
+            </a>
+            <a class="perfil-link mediaquerryoff" href="#">
+                <div class="container__item" id="perfil-container">
+                    <img src="img/perfil24px.png" alt="meu perfil" class="container__imagem">
+                    <p class="container__texto">Meu perfil</p>
+                </div>
+            </a>
+        </div>
+        <div id="carrinho-vazio" class="info-box"><div class="info-box-flex"><img src="img/carrinho-vazio32px.png" alt="carrinho de compras vazio"><p><br>O carrinho está vazio</p></div></div>
+        <div id="perfil-info" class="info-box mediaquerryoff"></div>
+    </header>
+
+    
+  
+  <div class="wrapper">
+    
+    <div class="logo__site">
+      <img src="img/logo-belezucas.png" alt="logo do site Belezucas">
     </div>
-
-    <ul class="options">
-      <input type="checkbox" id="options-menu" class="options__buttom">
-      <label for="options-menu" class="options__rotulo">
-        <li class="options__item">Categorias</li>
-      </label>
-
-      <ul class="lista-menu">
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Masculino</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Feminino</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Cuidados com a Pele</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Banho</a>
-        </li>
-      </ul>
-
-      <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
-      <li class="options__item"><a href="#" class="options__link">Meus produtos</a></li>
-    </ul>
-
-    <input type="search" class="cabecalho__pesquisa" placeholder=" Bem vindo ao Belezucas, como podemos ajudar? ">
-
-    <div class="conteiner">
-      <a href="#"><img src="img/favorito24px.png" alt="meus favoritos" class="container__imagem options__favoritos"></a>
-      <a href="#" class="container__link">
-        <img src="img/carrinho24px.png" alt="carrinho de compras" class="container__imagem">
-        <p class="container__texto">Meu carrinho</p>
-      </a>
-      <a href="#" class="container__link">
-        <img src="img/perfil24px.png" alt="meu perfil" class="container__imagem">
-        <p class="container__texto">Meu perfil</p>
-      </a>
-    </div>
-  </div>
-
-  </header>
-
-<div class="wrapper">
-
-  <div class="logo__site">
-    <img src="img/logo-belezucas.png" alt="logo do site Belezucas">
-  </div>
-
+    
   <section class="baner">
     <h2 class="baner__titulo">Seja bem vindo ao Belezucas</h2>
     <p class="baner__texto">Aqui você encontra tudo para o seu visual, seja quem você quiser ser!</p>
@@ -96,57 +131,151 @@
   </section>
 
   <section class="carrosel">
-    <h2 class="carrosel__titulo">Novos Lançamentos</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+    <h2 class="carrosel__titulo">Confira nossos produtos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <a href="#" class="swiper-slide"><img src="img/cabelo.png" 
+          alt="imagem gerada por inteligencia artificial de mulher com ceblos ao vento"></a>
+          <a href="#" class="swiper-slide"><img src="img/perfumaria-masculina.png"
+            alt="imagem gerada por inteligencia artificial de homem segurando perfume"></a>
+            <a href="#" class="swiper-slide"><img src="img/skincare.png" 
+              alt="imagem gerada por inteligencia artificial de mulher cuidando da pele"></a>
+              <a href="#" class="swiper-slide"><img src="img/perfumaria-feminina.png"
+                alt="imagem gerada por inteligencia artificial de mulher segurando perfume"></a> 
+                <a href="#" class="swiper-slide"><img src="img/corpo-banho.png"
+                  alt="imagem gerada por inteligencia artificial de mulher no banho lavando a pele"></a> 
+                  <a href="#" class="swiper-slide"><img src="img/maquiagem.png" 
+                    alt="imagem gerada por inteligencia artificial de mulher se maquiando"></a>
+                    
+                  </div>
+                  
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+  </section>
 
-          <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/cabelo.png" 
-                alt="imagem gerada por inteligencia artificial de mulher com ceblos ao vento"></div>
-              <div class="swiper-slide"><img src="img/perfumaria-masculina.png"
-                      alt="imagem gerada por inteligencia artificial de homem segurando perfume"></div>
-              <div class="swiper-slide"><img src="img/skincare.png" 
-                      alt="imagem gerada por inteligencia artificial de mulher cuidando da pele"></div>
-              <div class="swiper-slide"><img src="img/perfumaria-feminina.png"
-                      alt="imagem gerada por inteligencia artificial de mulher segurando perfume"></div> 
-              <div class="swiper-slide"><img src="img/corpo-banho.png"
-                      alt="imagem gerada por inteligencia artificial de mulher no banho lavando a pele"></div> 
-              <div class="swiper-slide"><img src="img/maquiagem.png" 
-                      alt="imagem gerada por inteligencia artificial de mulher se maquiando"></div>
-              
-          </div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+  <section class="mediaquerryoff">
+  <div class="produtos__titulo">
+      <h2>Produtos imperdíveis, ofertas de até 60%</h2>
+  </div>
+  <section class="produtos">
+              <div class="produtos-card">
+                <a href="#">
+                    <div class="produtos-img">
+                        <img src="./img/oleo-barba.jpeg" alt="imagem de oleo para barba gerada por IA">
+                    </div>
+                    <div class="produtos-details">
+                        <h4><a href="#">Loção Pós Barba Belezucas</a></h4>
+                        <span class="produtos-catagory">Coleção Barba de Respeito</span>
+                        <div class="produtos-bottom-details">
+                            <div class="produtos-price"><small>R$55.00</small>R$32,90</div>
+                            <div class="produtos-links">
+                                <a href="#"><i class="produtos-favoritos"></i></a>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button class="produtos-btn">COMPRAR</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          <div class="produtos-card">
+            <a href="#">
+                <div class="produtos-img">
+                    <img src="./img/oleo-banho.jpeg" alt="descrição do produto">
+                </div>
+                <div class="produtos-details">
+                    <h4><a href="#">Óleo de Banho Beszucas</a></h4>
+                    <span class="produtos-catagory">SPA de luxo</span>
+                    <div class="produtos-bottom-details">
+                        <div class="produtos-price"><small>R$95.00</small>R$69,90</div>
+                        <div class="produtos-links">
+                            <a href="#"><i class="produtos-favoritos"></i></a>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="produtos-btn">COMPRAR</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="produtos-card">
+          <a href="#">
+              <div class="produtos-img">
+                  <img src="./img/elegance-orange.jpeg" alt="descrição do produto">
+              </div>
+              <div class="produtos-details">
+                  <h4><a href="#">Perfume Elegance Orange</a></h4>
+                  <span class="produtos-catagory">Coleção Orange</span>
+                  <div class="produtos-bottom-details">
+                      <div class="produtos-price"><small>R$195.00</small>R$129,90</div>
+                      <div class="produtos-links">
+                          <a href="#"><i class="produtos-favoritos"></i></a>
+                      </div>
+                  </div>
+                  <div class="btn-container">
+                      <button class="produtos-btn">COMPRAR</button>
+                  </div>
+              </div>
+          </a>
       </div>
 
-      <div class="card">
-        <div class="card__descrição">
-            <div class="descrição">
-                <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                <h2 class="descrição__titulo-livro">Creme Hidratante BELEZUCAS</h2>
-                <p class="descrição__texto">Nosso creme hidratante de corpo que hidrata e ilumina a pele.</p>
+      <div class="produtos-card">
+        <a href="#">
+            <div class="produtos-img">
+                <img src="./img/kit-belezucas.jpeg" alt="descrição do produto">
             </div>
-      <section class="img__banner">
-            <img src="img/destaque_produto.png" alt="imagem do produto em destaque" class="descrição__imagem">
-            </section>
-        </div>
+            <div class="produtos-details">
+                <h4><a href="#">Kit Essencia Essencial</a></h4>
+                <span class="produtos-catagory">Essential pure</span>
+                <div class="produtos-bottom-details">
+                    <div class="produtos-price"><small>R$229.90</small>R$88,90</div>
+                    <div class="produtos-links">
+                        <a href="#"><i class="produtos-favoritos"></i></a>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="produtos-btn">COMPRAR</button>
+                </div>
+            </div>
+        </a>
+    </div>
+            
+  </section>
+</section>
 
-        <div class="card__botões">
-            <ul class="botões">
-                <li class="botões__item"><img src="img/favorito32px.png" alt="Favoritar item"></li>
-                <li class="botões__item"><img src="img/carrinho32px.png" alt="Adicionar no carrinho de compras"></li>
-            </ul>
-            <a href="#" class="botões__ancora">Saiba mais</a>
+  <div class="card">
+    <div class="card__descrição">
+        <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Creme Hidratante BELEZUCAS</h2>
+            <p class="descrição__texto">Nosso creme hidratante de corpo que hidrata e ilumina a pele.</p>
         </div>
+  <section class="img__banner">
+        <img src="img/destaque_produto.png" alt="imagem do produto em destaque" class="descrição__imagem">
+        </section>
     </div>
 
-  </section>
+    <div class="card__botões">
+        <ul class="botões">
+            <li class="botões__item"><img src="img/favorito32px.png" alt="Favoritar item"></li>
+            <li class="botões__item"><img src="img/carrinho32px.png" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+    </div>
+</div>
+
+</section>
 
 <div class="news__mq">
   <section class="newsletter">
@@ -160,114 +289,91 @@
         <p class="news__insta">@belezucas</p>
       </div>
     </div>
-
+    
   </section>
-
+  
   <div class="news__image">
     <img src="img/perfume_belezucas.png" alt="imagem criada via inteligencia artificial de um perfume da marca">
   </div>
 </div>
 
-  <div class="news__mq">
-    <div class="news__image">
-      <img src="img/cliente-belezucas.png" alt="imagem gerada por inteligencia artificial de um cliente da loja ficticia belezucas">
-    </div>
-
+<div class="news__mq">
+  <div class="news__image">
+    <img src="img/cliente-belezucas.png" alt="imagem gerada por inteligencia artificial de um cliente da loja ficticia belezucas">
+  </div>
+  
   <section class="enderecos">
-      <h1 class="enderecos__titulo">Nossas Lojas</h1>
-      <div class="enderecos__itens">
-        <a href="https://maps.app.goo.gl/ktQoL5BN4UrcitHr7" target="_blank" class="enderecos__link">
+    <h1 class="enderecos__titulo">Nossas Lojas</h1>
+    <div class="enderecos__itens">
+      <a href="https://maps.app.goo.gl/ktQoL5BN4UrcitHr7" target="_blank" class="enderecos__link">
       <div class="enderecos__item"><b class="enderecos__cidade">Campo Grande - MS</b><br>Av. html e css, 100</div></a>
         <a href="https://youtu.be/jb5z-_TyJfw?t=100" target="_blank" class="enderecos__link">
       <div class="enderecos__item"><b class="enderecos__cidade">Esmero - MT</b><br>Rua dos Bobos, 0</div></a>
-        <a href="https://maps.app.goo.gl/PygQNqRdsseo6haP8" target="_blank" class="enderecos__link">
-      <div class="enderecos__item"><b class="enderecos__cidade">São Paulo -SP</b><br>Av. Maiara e Maraisa, 10100</div></a>
+      <a href="https://maps.app.goo.gl/PygQNqRdsseo6haP8" target="_blank" class="enderecos__link">
+        <div class="enderecos__item"><b class="enderecos__cidade">São Paulo -SP</b><br>Av. Maiara e Maraisa, 10100</div></a>
         <a href="https://maps.app.goo.gl/eVxqy9na9moJTQRHA" target="_blank" class="enderecos__link">
-      <div class="enderecos__item"><b class="enderecos__cidade">Rio de Janeiro - RJ</b><br>Shopping Bangu 1<br>cela 3</div></a>
+          <div class="enderecos__item"><b class="enderecos__cidade">Rio de Janeiro - RJ</b><br>Shopping Bangu 1<br>cela 3</div></a>
+        </div>
+      </section>
+      
     </div>
-  </section>
-
-</div>
-</div>
+  </div>
   
   <hr />
-
+  
   <footer class="rodape">
-  <div class="rodape__titulo"><h1 class="rodape__nome-site">Belezucas</h1><p class rodape__descricao-site>&copy; 2024 projeto fictício Grupo desenvolve</p></div>
+    <div class="rodape__titulo"><h1 class="rodape__nome-site">Belezucas</h1><p class rodape__descricao-site>&copy; 2024 projeto fictício Grupo desenvolve</p></div>
     <ul class="rodape-lista">
-        <li class="rodape-lista__titulo">Sobre nós</li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Quem somos</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Nosso propósito</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Trabalhe Conosco</a>
-        </li>
+      <li class="rodape-lista__titulo">Sobre nós</li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Quem somos</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Nosso propósito</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Trabalhe Conosco</a>
+      </li>
     </ul>
     <ul class="rodape-lista">
-        <li class="rodape-lista__titulo">Perguntas Frequentes</li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Trocas e Devoluções</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Parcelamento loja</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Frete para todo Brasil</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Seja um revendedor</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Outros</a>
-        </li>
+      <li class="rodape-lista__titulo">Perguntas Frequentes</li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Trocas e Devoluções</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Parcelamento loja</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Frete para todo Brasil</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Seja um revendedor</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Outros</a>
+      </li>
     </ul>
     <ul class="rodape-lista">
-        <li class="rodape-lista__titulo">Problemas</li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Suporte para Clientes</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Suporte para Lojistas</a>
-        </li>
-        <li class="rodape-lista__item">
-            <a href="#" class="rodape-lista__link">Política de Privacidade</a>
-        </li>
+      <li class="rodape-lista__titulo">Problemas</li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Suporte para Clientes</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Suporte para Lojistas</a>
+      </li>
+      <li class="rodape-lista__item">
+        <a href="#" class="rodape-lista__link">Política de Privacidade</a>
+      </li>
     </ul>
   </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-  spaceBetween: 6,
-  slidesPerView: 2.5,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-
-  a11y: {
-    prevSlideMessage: 'Previous slide',
-    nextSlideMessage: 'Next slide',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  breakpoints: {
-    1728: {
-      spaceBetween: 20  ,
-      slidesPerView: 3.5,
-    }
-  }
-});
-  </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./scripts/hide-menu.js"></script>
+<script src="./scripts/slider.js"></script>
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/slider-baner.js"></script>
+  
 </body>
 
 </html>
