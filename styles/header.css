@@ -156,6 +156,10 @@
     max-width: calc(100% - 40px);
     }
 
+ #perfil-info {
+        display: none;
+      }
+
 
 .logoff-button {
     background-color: var(--cor-de-titulos);
@@ -177,7 +181,7 @@
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: auto;
     border-bottom: 1px solid var(--cor-de-titulos);
 }
 
@@ -186,7 +190,8 @@
     align-items: center;
     font-size: 18px;
     /* border-bottom: 1px solid var(--cor-de-titulos); */
-    height: 30%;
+    height: auto;
+    width: auto;
     background-color: var(--cor-secundaria);
 }
 
@@ -199,6 +204,8 @@
     align-items: baseline;
     margin: 10px 10px 0 20px;
     gap: 20px;
+    height: auto;
+    width: auto;
 }
   
 
@@ -450,17 +457,13 @@
 
 .acesso__conta {
     text-decoration: none;
-    color: var(--cor-de-titulos);
-}
-
-.acesso__conta {
     background-color: var(--cor-de-titulos);
     color: var(--cor-de-fundo);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 40px;
+    margin: 10px 0 10px 0;
     font-size: 14px;
     white-space: nowrap;
 }
@@ -478,9 +481,9 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 10px;
     font-size: 14px;
     text-align: center;
+    margin: 10px 0 10px 0;
 }
 
 .botao__logoff:hover {
